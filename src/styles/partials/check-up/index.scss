@@ -1,0 +1,149 @@
+.check-up {
+	padding: 100px 0 92px 0;
+
+	@media (max-width: /* width <= */ 576px) {
+		padding-bottom: 50px;
+	}
+}
+
+.check-up-slider {
+	--slide-gap: 0px;
+	// .check-up-slider__container
+	&__container {
+	}
+	// .check-up-slider__wrapper
+	&__wrapper {
+	}
+	// .check-up-slider__slide
+	&__slide {
+	}
+	// .check-up-slider__nav-pagination
+	&__nav-pagination {
+		margin-top: 34px;
+	}
+}
+
+.slide {
+	background-color: #e2f0ef;
+	display: flex;
+
+	@media (max-width: /* width <= */ 767.98px) {
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+	}
+	// .slide__text
+	&__text {
+		padding: 54px 20px 54px 63px;
+		flex-basis: 42.982456%;
+
+		@media (max-width: /* width <= */ 767px) {
+			padding: 20px;
+		}
+	}
+	// .slide__title
+	&__title {
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 128.947368%; /* 49/38 */
+		text-transform: uppercase;
+		margin-bottom: 2px;
+
+		@media (max-width: /* width <= */ 576px) {
+			font-size: 26px;
+		}
+	}
+	// .slide__subtitle
+	&__subtitle {
+		font-size: 22px;
+		line-height: 127.272727%; /* 28/22 */
+		margin-bottom: 16px;
+	}
+	// .slide__list
+	&__list {
+		margin-bottom: 33px;
+	}
+	// .slide__item
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+
+		& + & {
+			margin-top: 4px;
+		}
+
+		&::before {
+			flex-shrink: 0;
+			content: '';
+			width: 6px;
+			height: 6px;
+			background-color: var(--c-acc-prim);
+			border-radius: 50%;
+		}
+	}
+	// .slide__price
+	&__price {
+		display: flex;
+		gap: 16px;
+		align-items: end;
+		font-size: 20px;
+		line-height: 130%; /* 26/20 */
+		line-height: 1;
+		margin-bottom: 26px;
+	}
+	// .slide__price-old
+	&__price-old {
+		text-decoration-line: line-through;
+		color: #868686;
+		font-size: 16px;
+	}
+	// .slide__buttons
+	&__buttons {
+		display: flex;
+		gap: 14px;
+		flex-wrap: wrap;
+	}
+	// .slide__button
+	&__button {
+		flex-grow: 1;
+	}
+	// .slide__img
+	&__img {
+		overflow: hidden;
+
+		@media (min-width: /* width >= */ 768px) {
+			clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 24% 100%);
+		}
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+
+.slider-nav-pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 36px;
+	color: #c0c0c0;
+	// .slider-nav-pagination__button
+	&__button {
+		width: 34px;
+		height: 34px;
+
+		&--next {
+			transform: rotate(180deg);
+		}
+	}
+	// .slider-nav-pagination__fractions
+	&__fractions {
+	}
+	// .slider-nav-pagination__fraction-active
+	&__fraction-active {
+		color: var(--c-prim);
+	}
+	// .slider-nav-pagination__fraction-count
+	&__fraction-count {
+	}
+}

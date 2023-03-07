@@ -1,0 +1,32 @@
+.nav {
+	color: var(--c-sec);
+	// .nav__list
+	&__list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		column-gap: 30px;
+	}
+	// .nav__item
+	&__item {
+	}
+	// .nav__link
+	&__link {
+		padding: 10px 0;
+		border-radius: 50px;
+		width: 100%;
+
+		@media (any-hover: hover) {
+			&:hover .nav__text {
+				border-color: var(--c-acc-prim);
+			}
+		}
+	}
+	// .nav__text
+	&__text {
+		background-color: transparent;
+		border-bottom: 3px solid transparent;
+		transition: border 0.2s;
+		padding-bottom: 4px;
+	}
+}

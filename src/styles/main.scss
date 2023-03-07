@@ -1,0 +1,17 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+@import 'reset';
+@import 'mixins';
+@import 'fonts';
+@import 'vars';
+@import 'global';
+
+@import 'partials/nav';
+@import 'partials/button';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/hero';
+@import 'partials/check-up';
+@import 'partials/мake-an-appointment';
